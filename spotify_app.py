@@ -1,13 +1,13 @@
 import streamlit as st
-import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-# Spotify API credentials (replace with your credentials)
-CLIENT_ID = "your_client_id"  # Replace with your Spotify Client ID
-CLIENT_SECRET = "your_client_secret"  # Replace with your Spotify Client Secret
+# Fetch credentials from Streamlit secrets
+CLIENT_ID = st.secrets["CLIENT_ID"]
+CLIENT_SECRET = st.secrets["CLIENT_SECRET"]
 
 # Authenticate with Spotify API
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET), requests_timeout=30)
+
 
 # Function to extract artist names from a playlist
 def get_artists_from_playlist(playlist_url):
