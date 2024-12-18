@@ -1,2 +1,4 @@
-spotipy==2.23.0
+--upgrade pip
 streamlit==1.25.0
+spotipy==2.23.0
+pillow==9.5.0
