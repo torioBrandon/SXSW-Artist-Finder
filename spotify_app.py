@@ -1,5 +1,7 @@
 import streamlit as st
 from spotipy.oauth2 import SpotifyClientCredentials
+import os
+os.system("pip install --upgrade pip setuptools wheel")
 
 # Fetch credentials from Streamlit secrets
 CLIENT_ID = st.secrets["CLIENT_ID"]
