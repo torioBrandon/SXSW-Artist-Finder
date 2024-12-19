@@ -1,4 +1,4 @@
-pillow==10.4.0
+pillow==9.5.0
 streamlit==1.25.0
 spotipy==2.23.0
 setuptools>=65.5.0
