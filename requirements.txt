@@ -1,4 +1,4 @@
-pillow==9.0.1 --only-binary=:all:
+pillow==10.4.0
 streamlit==1.25.0
 spotipy==2.23.0
 setuptools>=65.5.0
