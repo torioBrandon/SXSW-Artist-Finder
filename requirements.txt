@@ -1,5 +1,5 @@
-pillow==9.5.0
 streamlit==1.25.0
 spotipy==2.23.0
+pillow==9.5.0 --only-binary=:all:
 setuptools>=65.5.0
 wheel>=0.40.0
